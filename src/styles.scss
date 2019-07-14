@@ -1,0 +1,48 @@
+// configurations, variables, mixins...
+@import "assets/styles/style_provider";
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap&subset=cyrillic');
+
+// normalize.css
+@import "~normalize.css/normalize.css";
+
+// google @material
+@import "@material/button/mdc-button";
+
+@import "@material/typography/mdc-typography";
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+// my base styles
+@import "assets/styles/base_styles";
+
+@import "assets/styles/typography";
+
+@import "assets/styles/components/container";
+
+// forms
+@import "assets/styles/components/forms/inputs";
+@import "assets/styles/components/forms/input_box";
+@import "assets/styles/components/forms/textareas";
+
+.mdc-button {
+  font-size: 1.5rem;
+}
+
+div[app-home] {
+  @include mq(md) {
+    flex-grow: 1;
+  }
+}
+
+.site-footer {
+  padding: 8px 12px;
+  background: $color-base;
+
+  @include mq-custom(max, 599px) {
+    padding: 4px;
+  }
+}
+
+

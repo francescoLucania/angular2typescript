@@ -1,0 +1,22 @@
+<div class="home">
+  <div class="container">
+    <form class="home__search-form">
+      <div class="input">
+        <input type="search" placeholder="Что ищим?" (input)="changeHomeFormSearch($event.target.value)">
+      </div>
+      <p class="home__search-form-description">{{this.userRequest}}</p>
+    </form>
+    <div class="home__grid">
+
+      <section class="home__base-col">
+        <h2 [class]="titleClass"><a href="#">{{title_2}}</a></h2>
+      </section>
+
+      <section class="home__blog-col">
+        <h2 [class]="titleClass"><a href="#">{{title_1}}</a></h2>
+        <div app-popular-list [popularList]="this.popularList"></div>
+      </section>
+
+    </div>
+  </div>
+</div>

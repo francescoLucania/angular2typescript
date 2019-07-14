@@ -1,0 +1,12 @@
+<div class="home-popular-list">
+  <div class="home-popular-list__grid">
+    <div class="home-popular-list__grid-col" *ngFor="let preview of previewList">
+      <article class="preview-video">
+        <div class="preview-video__image">
+          <img src="{{preview.imgUrl}}" alt="{{preview.title}}"/>
+        </div>
+        <h3 class="preview-video__title"><a href="#">{{preview.title}}</a></h3>
+      </article>
+    </div>
+  </div>
+</div>

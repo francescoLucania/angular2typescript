@@ -1,0 +1,23 @@
+{
+  "videos": [
+    {
+      "url": "01",
+      "artist": "A$AP Rocky",
+      "title": "Kids Turned Out Fine",
+      "imgUrl": "https://img.youtube.com/vi/FUQI-o02JYU/hqdefault.jpg",
+      "videoHtml": "number",
+      "pageUrl": "https://www.youtube.com/watch?v=FUQI-o02JYU",
+      "addDate": "14.07.2019"
+    },
+    {
+      "url": "02",
+      "artist": "Rammstein",
+      "title": "Ausländer",
+      "imgUrl": "https://img.youtube.com/vi/pat2c33sbog/hqdefault.jpg",
+      "videoHtml": "number",
+      "pageUrl": "https://www.youtube.com/watch?v=pat2c33sbog",
+      "addDate": "08.07.2019"
+    }
+  ]
+}
+

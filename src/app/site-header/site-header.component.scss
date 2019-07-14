@@ -1,0 +1,9 @@
+// configurations, variables, mixins...
+@import "../../assets/styles/style_provider";
+
+
+.mdc-top-app-bar {
+  &__title {
+    @include text-md;
+  }
+}

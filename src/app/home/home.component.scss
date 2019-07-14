@@ -1,0 +1,78 @@
+@import "../../assets/styles/style_provider";
+
+.home {
+  padding-top: map_get($mq-indents, 'lg');
+
+  &__search-form {
+    margin-bottom: map_get($mq-container-indents, 'lg') / 2;
+
+    @include mq(lg) {
+      margin-bottom: map_get($mq-container-indents, 'lg');
+    }
+  }
+
+  &__search-form-description {
+    @include text-sm;
+
+    margin-top: map_get($mq-container-indents, 'lg') / 4;
+    font-weight: 700;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__grid {
+    @include mq(md) {
+      @include grid;
+    }
+  }
+
+  &__title {
+    @include h5;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: map_get($mq-indents, 'sm');
+
+      @include mq(md) {
+        margin-bottom: map_get($mq-indents, 'md');
+      }
+
+      @include mq(lg) {
+        margin-bottom: map_get($mq-indents, 'lg') / 2;
+      }
+    }
+
+    &--is-active {
+      color: $mdc-theme-primary;
+    }
+  }
+
+  &__blog-col {
+    @include mq(sm) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    @include mq(md) {
+      @include grid-col-mx(2/6);
+    }
+
+    @include mq(lg) {
+      @include grid-col-mx(3/8);
+    }
+  }
+
+  &__base-col {
+    @include mq(md) {
+      @include grid-col-mx(4/6);
+    }
+
+    @include mq(lg) {
+      @include grid-col-mx(5/8);
+    }
+  }
+}
