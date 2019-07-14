@@ -58,21 +58,21 @@
     }
 
     @include mq(md) {
-      @include grid-col-mx(2/6);
+      @include grid-col-mx(3/6);
     }
 
     @include mq(lg) {
-      @include grid-col-mx(3/8);
+      @include grid-col-mx(4/8);
     }
   }
 
   &__base-col {
     @include mq(md) {
-      @include grid-col-mx(4/6);
+      @include grid-col-mx(3/6);
     }
 
     @include mq(lg) {
-      @include grid-col-mx(5/8);
+      @include grid-col-mx(4/8);
     }
   }
 }

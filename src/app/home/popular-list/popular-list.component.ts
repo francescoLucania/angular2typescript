@@ -10,7 +10,7 @@ import {ApiService} from "../../api.service";
 export class PopularListComponent implements OnInit {
   previewList;
 
-  @Input() popularList;
+  @Input() userRequest;
 
   constructor (private apiService: ApiService) {
 
@@ -20,7 +20,10 @@ export class PopularListComponent implements OnInit {
     this.apiService.getVideo().subscribe((data)=>{
       console.log(data['videos']);
       this.previewList = data['videos'];
+
       console.log(this.previewList);
+
+      console.log(this.userRequest)
 
     });
   }

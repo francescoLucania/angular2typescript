@@ -8,15 +8,17 @@ $mq-breakpoints: (
 );
 
 $mq-indents: (
-  "sm": 2.4rem,
-  "md": 4.8rem,
-  "lg": 6.4rem
+  "sm": 1.6rem,
+  "md": 2.4rem,
+  "lg": 4.8rem,
+  "xl": 6.4rem,
 );
 
 $mq-container-widths: (
   "sm": 100%,
   "md": 100%,
-  "lg": 1440px
+  "lg": 1440px,
+  "xl": 1600px,
 );
 
 $mq-container-indents: (

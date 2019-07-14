@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   userRequest = '';
 
-  popularList = "popular list";
+  popularList = "";
 
   constructor() { }
 
@@ -28,12 +28,8 @@ export class HomeComponent implements OnInit {
 
     if (userRequest != '' && userRequest.length > 2) {
       this.userRequest = 'По завпросу "' + userRequest + '" найдены сдудующие результаты:';
-
-      this.popularList = userRequest;
-
     } else {
       this.userRequest = '';
-      this.popularList = "popular list";
     }
   }
 }
